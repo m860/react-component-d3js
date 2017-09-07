@@ -1,66 +1,51 @@
 const routes = [{
-	path: 'httpdemo',
+	path: 'updatebarchartdata',
 	getComponent: async(location, callback)=> {
-		let module = await System.import("../pages/HttpDemo.js");
+		let module = await System.import("../pages/UpdateBarChartData.js");
 		callback(null, module.default);
 	},
-	name: "Http Demo"
+	name: "update bar chart data"
 },{
-	path: 'toastdemo',
+	path: 'barchartanimation',
 	getComponent: async(location, callback)=> {
-		let module = await System.import("../pages/ToastDemo.js");
+		let module = await System.import("../pages/AnimationBarChart.js");
 		callback(null, module.default);
 	},
-	name: "Toast Demo"
+	name: "bar chart animation"
 },{
-	path: 'loadingviewdemo',
+	path: 'barchartwithsvg2',
 	getComponent: async(location, callback)=> {
-		let module = await System.import("../pages/LoadingViewDemo.js");
+		let module = await System.import("../pages/BarChartWithSVG2.js");
 		callback(null, module.default);
 	},
-	name: "LoadingView Demo"
+	name: "bar chart axis with svg"
 },{
-	path: 'uploadfiledemo',
+	path: 'barchartwithsvg',
 	getComponent: async(location, callback)=> {
-		let module = await System.import("../pages/UploadFileDemo.js");
+		let module = await System.import("../pages/BarChartWithSVG.js");
 		callback(null, module.default);
 	},
-	name: "Upload File Demo"
+	name: "bar chart with svg"
 },{
-	path: 'paneldemo',
+	path: 'barchartwithdom',
 	getComponent: async(location, callback)=> {
-		let module = await System.import("../pages/PanelDemo.js");
+		let module = await System.import("../pages/LessonBarChart.js");
 		callback(null, module.default);
 	},
-	name: "Panel Demo"
+	name: "bar chart with dom"
 },{
-	path: 'pagingdatatable',
+	path: 'hellod3',
 	getComponent: async(location, callback)=> {
-		let module = await System.import("../pages/PagingDataTable.js");
+		let module = await System.import("../pages/LessonHello.js");
 		callback(null, module.default);
 	},
-	name: "Paging DataTable"
-},{
-	path: 'paginationdemo',
-	getComponent: async(location, callback)=> {
-		let module = await System.import("../pages/PaginationDemo.js");
-		callback(null, module.default);
-	},
-	name: "Pagination"
-},{
-	path: 'simpledatatable',
-	getComponent: async(location, callback)=> {
-		let module = await System.import("../pages/SimpleDataTable.js");
-		callback(null, module.default);
-	},
-	name: "Simple DataTable"
+	name: "hello d3"
 },{
 	path: '404',
 	getComponent: async(location, callback)=> {
 		let module = await System.import("../pages/404.js");
 		callback(null, module.default);
-	},
-	name: "404"
+	}
 }];
 
 export function getDefinedPaths() {

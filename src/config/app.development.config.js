@@ -10,7 +10,7 @@ export default {
 	},
 	// Nav 全局配置
 	navOptions: {
-		title: "React Practise",
+		title: "D3 Practise",
 		logo:(
 			<div className="logo">
 				<i className="fa fa-bug fa-2x"></i>

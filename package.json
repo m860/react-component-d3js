@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/m860/react-component-d3js.git.git"
+    "url": "git+https://github.com/m860/react-component-d3js.git"
   },
   "author": "m860",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/m860/react-component-d3js.git/issues"
+    "url": "https://github.com/m860/react-component-d3js/issues"
   },
-  "homepage": "https://github.com/m860/react-component-d3js.git#readme",
+  "homepage": "https://github.com/m860/react-component-d3js#readme",
   "devDependencies": {
     "autoprefixer": "^6.3.6",
     "babel-core": "^6.7.4",
@@ -55,6 +55,7 @@
   "dependencies": {
     "axios": "^0.16.2",
     "classnames": "^2.2.4",
+    "d3": "^4.10.2",
     "font-awesome": "^4.7.0",
     "guid": "0.0.12",
     "immutability-helper": "^2.1.2",
