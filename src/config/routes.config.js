@@ -1,4 +1,11 @@
 const routes = [{
+	path: 'shapes',
+	getComponent: async(location, callback)=> {
+		let module = await System.import("../pages/Shapes.js");
+		callback(null, module.default);
+	},
+	name: "shapes"
+},{
 	path: 'updatebarchartdata',
 	getComponent: async(location, callback)=> {
 		let module = await System.import("../pages/UpdateBarChartData.js");

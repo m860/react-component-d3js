@@ -10,19 +10,19 @@ import {Link} from "react-router";
 export default class Index extends BasePage {
 	constructor(props) {
 		super(props);
-		this._paths = getDefinedPaths();
+		this._paths = getDefinedPaths().reverse();
 	}
 
 	render() {
 		return (
 			<LayoutWithNav>
-				<ul>
+				<ol>
 					{this._paths.map((p, i)=>(
-						<li key={i}>
+						<li key={i} style={{listStyle:"inherit"}}>
 							<Link to={p.url}>{p.name}</Link>
 						</li>
 					))}
-				</ul>
+				</ol>
 			</LayoutWithNav>
 		);
 	}
