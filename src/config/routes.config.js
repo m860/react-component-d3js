@@ -1,4 +1,11 @@
 const routes = [{
+	path: 'shape1',
+	getComponent: async(location, callback)=> {
+		let module = await System.import("../pages/Shape1.js");
+		callback(null, module.default);
+	},
+	name: "复杂圆环1"
+},{
 	path: 'circularring',
 	getComponent: async(location, callback)=> {
 		let module = await System.import("../pages/CircularRing.js");
